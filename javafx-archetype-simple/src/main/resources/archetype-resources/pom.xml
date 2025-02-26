@@ -10,8 +10,17 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 #else
+#set($javafxVersionStr = "${javafx-version}")
+#if ($javafxVersionStr.startsWith("11") || $javafxVersionStr.startsWith("12") || $javafxVersionStr.startsWith("13") || $javafxVersionStr.startsWith("14") || $javafxVersionStr.startsWith("15") || $javafxVersionStr.startsWith("16") || $javafxVersionStr.startsWith("17") || $javafxVersionStr.startsWith("18") || $javafxVersionStr.startsWith("19"))
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+#elseif ($javafxVersionStr.startsWith("20") || $javafxVersionStr.startsWith("21") || $javafxVersionStr.startsWith("22"))
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+#else
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+#end
 #end
     </properties>
 #if ("8" != ${javafx-version} && "1.8" != ${javafx-version})
@@ -34,8 +43,12 @@
                     <excludes>
                         <exclude>module-info.java</exclude>
                     </excludes>
-#else
+#elseif ($javafxVersionStr.startsWith("11") || $javafxVersionStr.startsWith("12") || $javafxVersionStr.startsWith("13") || $javafxVersionStr.startsWith("14") || $javafxVersionStr.startsWith("15") || $javafxVersionStr.startsWith("16") || $javafxVersionStr.startsWith("17") || $javafxVersionStr.startsWith("18") || $javafxVersionStr.startsWith("19"))
                     <release>11</release>
+#elseif ($javafxVersionStr.startsWith("20") || $javafxVersionStr.startsWith("21") || $javafxVersionStr.startsWith("22"))
+                    <release>17</release>
+#else
+                    <release>21</release>
 #end
                 </configuration>
             </plugin>

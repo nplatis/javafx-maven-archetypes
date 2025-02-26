@@ -20,7 +20,7 @@ for compiling and running the JavaFX application.
 To install all the archetypes in your local repository execute the following commands:
 
 ```
-git clone https://github.com/openjfx/javafx-maven-archetypes.git
+git clone https://github.com/nplatis/javafx-maven-archetypes.git
 cd javafx-maven-archetypes
 mvn clean install
 ```

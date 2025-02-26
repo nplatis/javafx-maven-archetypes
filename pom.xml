@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openjfx</groupId>
+    <groupId>nplatis</groupId>
     <artifactId>javafx-maven-archetypes</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>23</version>
     <packaging>pom</packaging>
     <name>Maven Archetypes for JavaFX</name>
     <description>Maven archetypes for creating different types of JavaFX application.</description>
@@ -61,13 +61,13 @@
     </profiles>
 
     <organization>
-        <name>Gluon</name>
-        <url>https://www.gluonhq.com</url>
+        <name>Nikos Platis</name>
+        <url>https://github.com/nplatis</url>
     </organization>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/openjfx/javafx-maven-archetypes/issues</url>
+        <url>https://github.com/nplatis/javafx-maven-archetypes/issues</url>
     </issueManagement>
 
     <licenses>
@@ -80,23 +80,16 @@
 
     <developers>
         <developer>
-            <name>Abhinay Agarwal</name>
-            <email>abhinay.agarwal@gluonhq.com</email>
-            <organization>Gluon</organization>
-            <organizationUrl>https://www.gluonhq.com</organizationUrl>
-        </developer>
-        <developer>
-            <name>José Pereda</name>
-            <email>jose.pereda@gluonhq.com</email>
-            <organization>Gluon</organization>
-            <organizationUrl>https://www.gluonhq.com</organizationUrl>
+            <name>Nikos Platis</name>
+            <email>nplatis@gmail.com</email>
+            <organizationUrl>https://github.com/nplatis</organizationUrl>
         </developer>
     </developers>
 
     <scm>
-        <url>https://github.com/openjfx/javafx-maven-archetypes</url>
-        <connection>scm:git:git://github.com/openjfx/javafx-maven-archetypes.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:openjfx/javafx-maven-archetypes.git</developerConnection>
+        <url>https://github.com/nplatis/javafx-maven-archetypes/issues</url>
+        <connection>scm:git:git://github.com/nplatis/javafx-maven-archetypes.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:nplatis/javafx-maven-archetypes.git</developerConnection>
     </scm>
 
     <distributionManagement>

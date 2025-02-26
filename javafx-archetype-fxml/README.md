@@ -4,7 +4,7 @@ The project is a Maven archetype for creating a fxml based JavaFX application.
 
 ### Prerequisites
 
-* JDK 11
+* JDK 21
 * Maven 3
 
 
@@ -26,8 +26,8 @@ The following properties can be customized while creating the project:
 
 | Property                    | Default Value |
 | --------------------------- | ------------- |
-| javafx-version              | 13            |
-| javafx-maven-plugin-version | 0.0.5         |
+| javafx-version              | 23            |
+| javafx-maven-plugin-version | 0.0.8         |
 | add-debug-configuration     | N             |
 
 For example:
@@ -40,6 +40,6 @@ mvn archetype:generate \
         -DgroupId=groupid \
         -DartifactId=artifactId \
         -Dversion=version \
-        -Djavafx-version=12-ea+14 \
+        -Djavafx-version=21 \
         -Dadd-debug-configuration=Y
 ```

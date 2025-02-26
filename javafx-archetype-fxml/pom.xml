@@ -5,8 +5,8 @@
     <name>FXML JavaFX Maven Archetype</name>
 
     <parent>
-        <groupId>org.openjfx</groupId>
+        <groupId>nplatis</groupId>
         <artifactId>javafx-maven-archetypes</artifactId>
-        <version>0.0.7-SNAPSHOT</version>
+        <version>23</version>
     </parent>
 </project>
