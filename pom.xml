@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>nplatis</groupId>
     <artifactId>javafx-maven-archetypes</artifactId>
-    <version>23</version>
+    <version>25</version>
     <packaging>pom</packaging>
     <name>Maven Archetypes for JavaFX</name>
     <description>Maven archetypes for creating different types of JavaFX application.</description>
