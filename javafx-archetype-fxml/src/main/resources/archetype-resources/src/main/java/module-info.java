@@ -2,8 +2,8 @@
 /* doesn't work with source level ${javafx-version}:
 #end
 module $package {
-    requires javafx.controls;
-    requires javafx.fxml;
+    requires transitive javafx.controls;
+    requires transitive javafx.fxml;
 
     opens $package to javafx.fxml;
     exports $package;
